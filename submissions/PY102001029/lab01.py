@@ -69,8 +69,7 @@ def reverseList(head):
                 crt = next_node
             return prev
 
-    raise NotImplementedError
-
+ 
 def doubleIt(head):
     """
     LeetCode 2816 — Double a Number Represented as a Linked List
@@ -104,5 +103,5 @@ def doubleIt(head):
 
         curr = curr.next
      return head
-    raise NotImplementedError
+  
 
