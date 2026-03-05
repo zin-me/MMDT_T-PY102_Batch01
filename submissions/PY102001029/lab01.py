@@ -58,16 +58,15 @@ def reverseList(head):
     Reverse a singly linked list and return the new head.
     Time: O(n), Space: O(1)
     """
-    # TODO: Implement
-    def reverseList(self, head: Optional[ListNode]):
-            prev = None
-            crt = head
-            while crt is not None:
-                next_node = crt.next
-                crt.next = prev
-                prev = crt
-                crt = next_node
-            return prev
+
+    prev = None
+    crt = head
+    while crt is not None:
+        next_node = crt.next
+        crt.next = prev
+        prev = crt
+        crt = next_node
+    return prev
 
  
 def doubleIt(head):
@@ -86,22 +85,21 @@ def doubleIt(head):
     - Avoid converting the entire list into an integer/string for the core solution.
     """
 
-    # TODO: Implement
-    def doubleIt(self, head):
 
-     if head.val >= 5:
-        head = Node(0, head)
 
-     curr = head
-     while curr:
-        # Double current value (modulo 10)
-        curr.val = (curr.val * 2) % 10
+    if head.val >= 5:
+    head = Node(0, head)
 
-        # Look ahead: if the next digit is 5+, it will produce a carry
-        if curr.next and curr.next.val >= 5:
-            curr.val += 1
+    curr = head
+    while curr:
+    # Double current value (modulo 10)
+    curr.val = (curr.val * 2) % 10
 
-        curr = curr.next
-     return head
-  
+    # Look ahead: if the next digit is 5+, it will produce a carry
+    if curr.next and curr.next.val >= 5:
+        curr.val += 1
+
+    curr = curr.next
+    return head
+
 
