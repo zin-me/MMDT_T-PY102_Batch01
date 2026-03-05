@@ -88,18 +88,18 @@ def doubleIt(head):
 
 
     if head.val >= 5:
-    head = Node(0, head)
+        head = Node(0, head)
 
     curr = head
     while curr:
-    # Double current value (modulo 10)
-    curr.val = (curr.val * 2) % 10
+        # Double current value (modulo 10)
+        curr.val = (curr.val * 2) % 10
 
-    # Look ahead: if the next digit is 5+, it will produce a carry
-    if curr.next and curr.next.val >= 5:
-        curr.val += 1
+        # Look ahead: if the next digit is 5+, it will produce a carry
+        if curr.next and curr.next.val >= 5:
+            curr.val += 1
 
-    curr = curr.next
+        curr = curr.next
     return head
 
 
