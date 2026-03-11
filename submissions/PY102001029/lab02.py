@@ -32,7 +32,7 @@ def is_balanced_parentheses(s: str) -> bool:
       is_balanced_parentheses("a+(b*c)-{d/e}") -> True
     """
     stack = []
-    mapping = {')': '(', '}': '{', ']': '['}
+    mapping= {')': '(', '}': '{', ']': '['}
     
     for char in s:
         if char in "({[":
