@@ -43,7 +43,7 @@ def is_balanced_parentheses(s: str) -> bool:
                 return False
     
     return len(stack) == 0
-    raise NotImplementedError
+    
 
 
 def next_greater_to_right(nums: list[int]) -> list[int]:
@@ -66,8 +66,7 @@ def next_greater_to_right(nums: list[int]) -> list[int]:
         stack.append(i)
         
     return res
-    raise NotImplementedError
-
+    
 
 # -------------------------
 # Queue Questions (2)
@@ -108,8 +107,7 @@ def first_non_repeating(stream: str) -> str:
             result.append(queue[0])
             
     return "".join(result)
-    raise NotImplementedError
-
+    
 
 def hot_potato(names: list[str], k: int) -> str:
     """
@@ -155,4 +153,3 @@ def hot_potato(names: list[str], k: int) -> str:
         
     return queue[0]
 
-    raise NotImplementedError
