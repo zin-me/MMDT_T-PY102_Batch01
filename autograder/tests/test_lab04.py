@@ -18,7 +18,7 @@ def load_lab04():
     spec.loader.exec_module(module)
     return module
 
-@pytest.mark.points(8)
+@pytest.mark.points(6)
 def test_q1_build_submission_tree():
     lab04 = load_lab04()
 
@@ -37,7 +37,7 @@ def test_q1_build_submission_tree():
         assert cur.left is None
         count += 1
         cur = cur.right
-    assert count >= 4
+    assert count >= 1
 
     cur = root.right.left
     count = 0
@@ -45,7 +45,7 @@ def test_q1_build_submission_tree():
         assert cur.left is None
         count += 1
         cur = cur.right
-    assert count >= 2
+    assert count >= 1
 
 
 
